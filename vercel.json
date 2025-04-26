@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "gui_buddy.py", "use": "@vercel/python" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "gui_buddy.py" }
+    ]
+  }
+  

@@ -151,6 +151,13 @@ def create_gui():
     # Start the app
     root.after(1000, wish_user)
     root.mainloop()
+    
+def handler(request):
+    return {
+        "statusCode": 200,
+        "headers": {"Content-Type": "application/json"},
+        "body": "Hello from Python on Vercel!"
+    }
 
 
 if __name__ == "__main__":
